@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/latar"
+    android:configChanges="orientation|screenSize"
+    tools:context="com.touchplanet.myapplication.MainActivity">
+
+    <ImageButton
+        android:id="@+id/activity_main_button_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/enter" />
+
+
+    <ImageButton
+        android:id="@+id/activity_main_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/activity_main_button_mode"
+        android:background="@android:color/transparent"
+        android:src="@drawable/kiri" />
+
+    <ImageButton
+        android:id="@+id/activity_main_right_rev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/activity_main_button_mode"
+        android:background="@android:color/transparent"
+        android:src="@drawable/kanan_red" />
+
+    <ImageButton
+        android:id="@+id/activity_main_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_main_button_mode"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/atas" />
+
+    <ImageButton
+        android:id="@+id/activity_main_down_rev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_main_button_mode"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/bawah_red" />
+
+    <ImageButton
+        android:id="@+id/activity_main_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_button_mode"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/bawah" />
+
+    <ImageButton
+        android:id="@+id/activity_main_up_rev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_button_mode"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/atas_red" />
+
+    <ImageButton
+        android:id="@+id/activity_main_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/activity_main_button_mode"
+        android:background="@android:color/transparent"
+        android:src="@drawable/kanan" />
+
+    <ImageButton
+        android:id="@+id/activity_main_left_rev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/activity_main_button_mode"
+        android:background="@android:color/transparent"
+        android:src="@drawable/kiri_red" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp">
+
+        <Button
+            android:id="@+id/activity_main_button_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXIT"
+            android:textSize="13dp" />
+
+        <Spinner
+            android:id="@+id/activity_main_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_button_exit"
+            android:layout_centerHorizontal="true"
+            android:background="#fff"
+            android:spinnerMode="dropdown" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="top"
+        android:text="Petunjuk Pemakaian :"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"
+        android:text="Klik tombol tengah untuk mengubah mode"
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
